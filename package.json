@@ -1,0 +1,61 @@
+{
+  "name": "h3-ai-chatbot",
+  "version": "1.0.0",
+  "description": "H3 plugin that adds the Asyntai AI chat assistant to every HTML page. It answers visitor questions from your own content, in 80+ languages. Works on Node.js, Bun, Deno and Cloudflare Workers.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "h3",
+    "h3-plugin",
+    "unjs",
+    "plugin",
+    "middleware",
+    "chatbot",
+    "ai-chatbot",
+    "ai",
+    "chat",
+    "chat-widget",
+    "live-chat",
+    "customer-support",
+    "cloudflare-workers",
+    "bun",
+    "deno",
+    "asyntai"
+  ],
+  "homepage": "https://asyntai.com/documentation/integrations/h3/",
+  "bugs": {
+    "url": "https://github.com/asyntai/h3-ai-chatbot/issues",
+    "email": "hello@asyntai.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asyntai/h3-ai-chatbot.git"
+  },
+  "author": "Asyntai <hello@asyntai.com> (https://asyntai.com)",
+  "license": "MIT",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20.0"
+  },
+  "scripts": {
+    "test": "node --test tests/test_plugin.js"
+  },
+  "peerDependencies": {
+    "h3": ">=2.0.0"
+  },
+  "devDependencies": {
+    "h3": "^2.0.8"
+  }
+}
